@@ -1,7 +1,14 @@
-function ProfileCard() {
+// function ProfileCard(props) {
+function ProfileCard({ title, handle }) {
+    // const title = props.title;
+    // const handle = props.handle;
+
+    // const { title, handle } = props;
+    console.log(title, handle);
     return (
         <div>
-            <h1>Profile Card</h1>
+            <div>Title is {title}</div>
+            <div>Handle is {handle}</div>
         </div>
     );
 }
