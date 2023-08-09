@@ -12,25 +12,38 @@ import ProfileCard from "./ProfileCard";
 function App() {
   return (
     <div>
-      <div>
-        <h1>Personal Digital Assistants</h1>
-      </div>
+      <section className="hero is-primary">
+        <div className="hero-body">
+          <p className="title">Personal Digital Assistants</p>
+        </div>
+      </section>
 
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-3">
-              <ProfileCard title="Alexa" handle="@alexa99" image={ImgAlexa} />
+              <ProfileCard
+                title="Alexa"
+                handle="@alexa99"
+                image={ImgAlexa}
+                description="Alexa was created by Amazon and helps you buy things."
+              />
             </div>
             <div className="column is-3">
               <ProfileCard
                 title="Cortana"
                 handle="@cortana32"
                 image={ImgCortana}
+                description="Cortana was a voice assistant created by Microsoft."
               />
             </div>
             <div className="column is-3">
-              <ProfileCard title="Siri" handle="@siri01" image={ImgSiri} />
+              <ProfileCard
+                title="Siri"
+                handle="@siri01"
+                image={ImgSiri}
+                description="Siri was made by Apple and is being phased out"
+              />
             </div>
           </div>
         </div>
